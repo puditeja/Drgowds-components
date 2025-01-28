@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information</title>
+   
+   <style>
+        
+
+
+.celebrity-reviews-section{
+    height: 50vh;
+}
+    .customtabs-for-celebrity {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .customtab-for-celebrity {
+        color: #212121;
+        font-size: 22px;
+        font-family: ct_font_founders, Sans-Serif;
+        transition: all 0.3s cubic-bezier(.34, 1.56, .64, 1);
+        cursor: pointer;
+        display: inline-block;
+        padding: 10px;
+        position: relative; 
+        margin-bottom: 30px;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .customtab-for-celebrity.active {
+        width: 100%; 
+        height: 350px;
+        object-fit: cover;
+        border:2px solid #000;
+    }
+    
+    .customtab-progress {
+        position: absolute;
+        bottom: -2px; 
+        left: 0;
+        height: 2px;
+        background: #000;
+        width: 0%; 
+        border-radius: 2px;
+    }
+    
+    
+    
+    
+    .customcontent-for-celebrity.active svgbox-for-celebrity  imagebox-forcelebrity{
+        display: flex;
+        height:320px !important;
+    
+    }
+    
+      
+    .customtab-content-for-celebrity {
+        position: relative; 
+        width: 50%;
+    }
+    
+    .customcontent-for-celebrity {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.3s cubic-bezier(.34, 1.56, .64, 1);
+        display: none; 
+    }
+    
+    .customcontent-for-celebrity.active {
+        display: flex; 
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+        opacity: 1;
+        transform: translateY(-20px);
+        
+    }
+    
+    .customcontent-for-celebrity img{
+        width: 100%;
+        height: auto;
+       
+    }
+    .customcontent-for-celebrity img {
+        width: 100%;
+        height: auto;
+        border: 2px solid #ccc;
+        border-radius: 26px;
+        box-shadow: 0 .6021873017743928px 1.8065619053231785px -.8333333333333333px #ff009926, 0 2.288533303243457px 6.8655999097303715px -1.6666666666666665px #ff009926, 0 10px 30px -2.5px #ff009926, 0 .6021873017743928px 1.8065619053231785px -1px #ffcc0025, 0 2.288533303243457px 6.8655999097303715px -2px #ffcc0023, 0 10px 30px -3px #ffcc001a;
+    }
+    @media(max-width:768px){
+        .customtab-content-for-celebrity {
+        position: relative;
+        width: 100%;
+        height: 100px;
+    }
+        .customcontent-for-celebrity img{
+            border-radius: 14px;
+        }
+        .customcontent-for-celebrity img{
+            width: 100%;
+        }
+        .customcontent-for-celebrity{
+            width: 100%;
+        }
+        .customtab-for-celebrity{
+            font-size: 20px;
+        }
+            .customtabs-for-celebrity {
+            display: flex;
+            justify-content: flex-start;
+            overflow-x: auto; 
+            scroll-behavior: smooth; 
+            gap: 16px; 
+            padding-bottom: 10px; 
+                    overflow-x: auto;
+        width: 100%;
+        }
+    
+        .customtabs-for-celebrity::-webkit-scrollbar {
+            display: none; 
+        }
+        .customtabs-for-celebrity {
+            -ms-overflow-style: none;
+            scrollbar-width: none; 
+        }
+    
+        .customtab-for-celebrity {
+            font-size: 18px; 
+            margin-bottom: 20px; 
+            flex-shrink: 0; 
+            white-space: nowrap; 
+            
+        }
+        .celebrity-reviews-section{
+            flex-direction: column;
+            row-gap: 50px !important;
+            height: 60vh !important;
+        }
+    }
+    
+    .customreview-progress{
+       display: none;
+    }
+    .celebrity-reviews-section{
+        display: flex;
+        justify-content: center;
+        flex-direction:  column-reverse;
+        row-gap: 120px;
+        align-items: center;
+    }
+    .imagebox-forcelebrity{
+        width: 100%;
+        height:100%;
+        
+    }
+    .big-size{
+        font-size: 20px;
+        color: #000;
+        text-align: center;
+    }
+    .centerneed{
+      text-align: center;  
+    }
+    .customcontent-for-celebrity{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .svgbox-for-celebrity{
+        background: transparent;
+        height: 100%;
+    }
+    @media(max-width:370px){
+        .imagebox-forcelebrity{
+            width: 80px;
+        }
+        .customtab-for-celebrity {
+       
+            
+        }
+        .celebrity-reviews-section{
+            row-gap: 10px;
+        }
+        .big-size{
+            font-size: 18px;
+        }
+    }
+   
+    </style>
+    </head>
+    
+        <section class="celebrity-reviews-section"  id="celebrity-tabs-widget">
+            
+            <div class="customtabs-for-celebrity">
+                <div class="customtab-for-celebrity" data-tab="1"><div class="svgbox-for-celebrity"><img class="imagebox-forcelebrity"  src="https://drgowd.dehydratechstudy.com/wp-content/uploads/2025/01/Actors-Nagarjuna.png" ></div><div class="customreview-progress"></div></div>
+                <div class="customtab-for-celebrity" data-tab="2"><div class="svgbox-for-celebrity"><img class="imagebox-forcelebrity"  src="https://drgowd.dehydratechstudy.com/wp-content/uploads/2025/01/Actors-adi.png" ></div><div class="customreview-progress"></div></div>
+                <div class="customtab-for-celebrity" data-tab="3"><div class="svgbox-for-celebrity"><img class="imagebox-forcelebrity"  src="https://drgowd.dehydratechstudy.com/wp-content/uploads/2025/01/Actors-rithu.png" ></div><div class="customreview-progress"></div></div>
+                <div class="customtab-for-celebrity" data-tab="4"><div class="svgbox-for-celebrity"><img class="imagebox-forcelebrity"  src="https://drgowd.dehydratechstudy.com/wp-content/uploads/2025/01/Actors-unk.png" ></div><div class="customreview-progress"></div></div>
+                
+            </div>
+            
+            <div class="customtab-content-for-celebrity">
+                <div class="customcontent-for-celebrity" id="content-1">
+                    <p class="big-size">“Nagarjuna visited us for his dental needs and had a wonderful experience with our skilled team.”</p>
+                    <strong><h3 class="centerneed">Akkineni Nagarjuna</h3></strong>
+                </div>
+                <div class="customcontent-for-celebrity" id="content-2">
+                    <p class="big-size">“Actor Aadi Pudipeddi chose Dr. Gowd’s for his dental care and appreciated the warm and professional treatment.”</p>
+                    
+                    <strong><h3 class="centerneed">Aadi Pudipeddi</h3></strong>
+                </div>
+                <div class="customcontent-for-celebrity" id="content-3">
+                    <p class="big-size">“ Actress Ritu Varma loved her experience with us, highlighting the thoughtful care and attention she received.”</p>
+                    <strong><h3 class="centerneed">Ritu Varma</h3></strong>
+                </div>
+                <div class="customcontent-for-celebrity" id="content-3">
+                    <p class="big-size">“Esteemed IPS officer A. K. Khan felt at ease with our professional dental care and left with a brighter smile.”</p>
+                    <strong><h3 class="centerneed">A. K. Khan</h3></strong>
+                </div>
+                
+            </div>
+            </section>
+            
+            <script>
+                
+       
+        
+    document.addEventListener('DOMContentLoaded', () => {
+        const widget = document.querySelector('#celebrity-tabs-widget');
+        if (!widget) return;
+    
+        let currentIndex = 0;
+        const ctabs = widget.querySelectorAll('.customtab-for-celebrity');
+        const ccontents = widget.querySelectorAll('.customcontent-for-celebrity');
+        const changeTime = 9000;
+    
+        function activateTab(index) {
+            ctabs.forEach((tab, idx) => {
+                const progressBar = tab.querySelector('.customreview-progress');
+                const isActive = idx === index;
+    
+                tab.classList.toggle('active', isActive);
+                ccontents[idx]?.classList.toggle('active', isActive);
+    
+                if (isActive) {
+                    progressBar.style.transition = 'none';
+                    progressBar.offsetWidth; // Trigger reflow
+                    progressBar.style.transition = `width ${changeTime}ms linear`;
+                    progressBar.style.width = '100%';
+                } else {
+                    progressBar.style.transition = 'none';
+                    progressBar.style.width = '0';
+                }
+            });
+        }
+    
+        function cycleTabs() {
+            currentIndex = (currentIndex + 1) % ctabs.length;
+            activateTab(currentIndex);
+        }
+    
+        ctabs.forEach((tab, index) => {
+            tab.addEventListener('click', () => {
+                currentIndex = index;
+                activateTab(currentIndex);
+                clearInterval(change);
+                change = setInterval(cycleTabs, changeTime);
+            });
+        });
+    
+        let change = setInterval(cycleTabs, changeTime);
+        activateTab(0);
+    });
+    
+        
+      
+        
+        
+            </script>
