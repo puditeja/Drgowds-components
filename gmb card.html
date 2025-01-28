@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #24358E;
+            color: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 1296px;
+            padding: 40px;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .contact-details {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .logo img {
+            width: 20px;
+            height: 20px;
+            margin-bottom: 10px;
+        }
+
+        .contact-title {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        .contact-info a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .social-links a img {
+            width: 25px;
+            height: 25px;
+        }
+
+        .booking-buttons {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 10px;
+        }
+
+        .booking-buttons button {
+            padding: 12px 20px;
+            border-radius: 30px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            gap: 8px;
+        }
+
+        .call-booking {
+            background-color: #fff;
+            color: #24358E;
+            border: none;
+        }
+        .whatsapp-booking {
+            background-color: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+
+        .map-container iframe {
+            border-radius: 10px;
+            width: 500px;
+            height: 300px;
+            border: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+                padding: 20px;
+            } 
+
+            .contact-title {
+                font-size: 16px;
+            }
+
+            .contact-info {
+                font-size: 13px;
+            }
+
+            .booking-buttons button {
+                width: 100%;
+            }
+        }
+
+        .social-links a img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .booking-buttons {
+            gap: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <div class="contact-details">
+            <div class="logo">
+                <img src="https://via.placeholder.com/100">
+            </div>
+            <h2 class="contact-title">Dr. Gowds</h2>
+            <p class="contact-info">
+                S.B.R's, C.V Towers, Flat No. 402, Above Karachi Bakery, Opp. <br>
+                Pizza Hut, Hi-tech City, Madhapur, Hyderabad - 500081.<br>
+                Official Website: <a href="https://drgowd.in/" target="_blank">https://drgowd.in/</a>
+            </p>
+            <div class="social-links">
+                <a href="#"><img src="https://via.placeholder.com/25"></a>
+                <a href="#"><img src="https://via.placeholder.com/25"></a>
+                <a href="#"><img src="https://via.placeholder.com/25"></a>
+                <a href="#"><img src="https://via.placeholder.com/25"></a>
+                <a href="#"><img src="https://via.placeholder.com/25"></a>
+                <a href="#"><img src="https://via.placeholder.com/25"></a>
+            </div>
+            <div class="booking-buttons">
+                <button class="call-booking" onclick="window.location.href='tel:+1234567890'">
+                    📞 Book on Call Now
+                </button>
+                <button class="whatsapp-booking" onclick="window.location.href='https://wa.me/1234567890'">
+                    💬 Book on WhatsApp
+                </button>
+            </div>
+        </div>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3158.933864447722!2d78.383459!3d17.450749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91cd4c9e55df%3A0xa5c7e0c9d4031046!2sHi-tech%20City%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1675411234567!5m2!1sen!2sin"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</body>
+</html>
